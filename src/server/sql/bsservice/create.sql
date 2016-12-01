@@ -1,0 +1,21 @@
+create table BSSERVICE (
+   NSERV_ID             INT8                 not null,
+   NSERVT               INT4                 not null,
+   VTARSTATE            VARCHAR(2)           not null,
+   DINPUT               TIMESTAMP            not null,
+   VSTATE               VARCHAR(2)           not null,
+   NSERVINT             INT8                 null,
+   NSCARD               INT8                 null,
+   NSUM                 NUMERIC(36,14)       null,
+   NFULLSUM             NUMERIC(36,14)       null,
+   VTARSTATEOLD         VARCHAR(2)           null,
+   NCPCTRATE            NUMERIC(36,14)       null,
+   NCPCTSERV            NUMERIC(36,14)       null,
+   DBEGIN               TIMESTAMP            null,
+   DEND                 TIMESTAMP            null,
+   DDATE                TIMESTAMP            null,
+   NBSPER               INT4                 not null,
+   NCPCTSERVOUT         NUMERIC(36,14)       null,
+   NCPCTRATEOUT         NUMERIC(36,14)       null,
+   constraint PK_BSSERVICE primary key (NSERV_ID)
+);
